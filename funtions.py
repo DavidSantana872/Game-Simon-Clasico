@@ -74,6 +74,7 @@ def get_color(num_color):
                 messagebox.showwarning(title= "Malisimo", message= "Malisimo perdiste")
                 Array_Colors.clear()
                 Array_Colors_Input.clear()
+                num_color = 0
     else:
         if(Array_Colors == Array_Colors_Input):
                 level = consult_level()
@@ -81,6 +82,7 @@ def get_color(num_color):
                 more_level(level)
                 Array_Colors.clear()
                 Array_Colors_Input.clear()
+                num_color = 0
 def more_level(level):
     level = consult_level()
     archivo = open("niveles.txt", "w")
